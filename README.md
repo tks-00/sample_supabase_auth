@@ -1,16 +1,36 @@
-# sample_supabase_auth
+# Supabase認証サンプル
 
-A new Flutter project.
+### プロジェクト構成
+lib/
+├── pages/
+│   ├── home_page.dart        # ホーム画面のUI（ログアウト機能を含む）
+│   ├── login_page.dart       # ログイン画面とログイン処理の実装
+│   └── signup_page.dart      # サインアップ（新規登録）画面と処理の実装
+├── utils/
+│   └── error_translator.dart # エラーメッセージを翻訳する関数
+└── main.dart                 # アプリケーションのエントリーポイント。ルーティングやテーマ設定を含む
 
-## Getting Started
+### セットアップ手順
 
-This project is a starting point for a Flutter application.
+1. このリポジトリをフォークします
+GitHub上で「フォーク」ボタンをクリックして、あなたのGitHubアカウントにこのリポジトリをコピーします。
 
-A few resources to get you started if this is your first Flutter project:
+2. フォークしたリポジトリをローカル環境にクローンします
+```
+git clone git@github.com:tks-00/sample_supabase_auth.git
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. 依存関係をインストールします
+```
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Supabaseプロジェクトの設定
+- Supabaseにアクセスし、新しいプロジェクトを作成します。
+- プロジェクト作成後、APIセクションからSupabase URLとanonKeyを取得します。
+- main.dartファイル内のurlとanonKeyをあなたのプロジェクトの情報に置き換えます。
+
+5. プロジェクトを実行します
+```
+flutter run
+```
