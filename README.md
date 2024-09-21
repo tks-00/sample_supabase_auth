@@ -1,6 +1,7 @@
 # Supabase認証サンプル
 
 ### プロジェクト構成
+
 lib/
 ├── pages/
 │   ├── home_page.dart        # ホーム画面のUI（ログアウト機能を含む）
